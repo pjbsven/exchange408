@@ -1,8 +1,27 @@
+@font-face {
+  font-family: 'kollektif';
+  src: url('../fonts/kollektif/kollektif.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'kollektif Bold';
+  src: url('../fonts/kollektif/kollektif-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'kollektif Italic';
+  src: url('../fonts/kollektif/kollektif-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'kollektif BoldItalic';
+  src: url('../fonts/kollektif/kollektif-BoldItalic.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'kollektif Italic', sans-serif;
   color: #4a4a4a;
 }
 
@@ -11,12 +30,12 @@ body {
 }
 
 .titleText {
-  font-family: 'Playfair Display', serif;
+  font-family: 'kollektif Bold', serif;
   font-size: 26px;
 }
 
 .titleTextMed {
-  font-family: 'Playfair Display', serif;
+  font-family: 'kollektif', serif;
   font-size: 22px;
 }
 
@@ -81,6 +100,10 @@ body {
   z-index: -1;
 }
 
+.landingPageContent img {
+  width: 350px;
+}
+
 .landingPageContent h4,
 .landingPageContent p {
   color: #f0f0ec;
@@ -94,12 +117,19 @@ body {
   .landingPageContent {
     width: 100vw;
   }
+  .landingPageContent img {
+    width: 80vw;
+  }
   .landingPageContent h4 {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width: 900px){
+
+  .landingPageContent img {
+    width: 500px;
+  }
   .landingPage::before {
     width: 900px;
     margin: auto;
@@ -745,8 +775,8 @@ button#prev {
   margin-top: 10px;
 }
 
-.logoWrapper {
-  max-width: 220px;
+.logoWrapper img {
+  width: 350px;
 }
 
 .social {
