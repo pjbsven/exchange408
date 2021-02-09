@@ -818,7 +818,7 @@ button#prev {
 }
 
 .tavernName {
-  justify-self: center;
+  width: max-content;
   grid-column: 1/6;
   grid-row: 4/5;
   letter-spacing: 6px;
